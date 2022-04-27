@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      ホームページ
+    </h2>
+    <p class='service-explain'>
+      資料画像を投稿したり、
+    </p>
+    <p class='service-explain'>
+      教室予約をするアプリです
+    </p>
+  </div>
+
+  <div class='club-contents'>
+    <h2 class='title'>クラブ/講座一覧</h2>
+    <ul class='club-lists'>
+      <% if @clubs.present? %>
+        <% @clubs.each do |club| %>
+          <li class='list'>
+            <%= link_to club_path(club) do %>
+              <div class='club-img-content'>
+              <%#= image_tag club.image, class: "club-img" %>
+              </div>
+              <div class='club-info'>
+                <h3 class='club-name'>
+                  <%= "クラブ名/講座名" %>
+                </h3>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      <% else %>
+        <li class='list'>
+          <%= link_to "#" do %>
+            <%= image_tag "club-sample.jpg", class: "club-img" %>
+            <div class='club-info'>
+              <h3 class='club-name'>
+                クラブ名/講座名を登録してください
+              </h3>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<%= render "shared/footer" %>

@@ -1,0 +1,22 @@
+<h1>投稿一覧</h1>
+<%= link_to "投稿する", new_post_path, class:"post" %>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-image">
+      <%= post.image %>
+    </div>
+    <div class="post-title">
+      <%= post.title %>
+    </div>
+    <div class="description">
+      <%= post.description %>
+    </div>
+    <div class="date">
+      <%= post.date %>
+    </div>
+    <div class="post-club">
+      <%#= post.club.name %>
+    </div>
+  </div>
+<% end %>

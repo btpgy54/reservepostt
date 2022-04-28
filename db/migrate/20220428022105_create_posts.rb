@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :description
       t.date :date
-      #t.references :club, null: false, foreign_key: true
+      t.integer :club_id, null: false
       t.timestamps
     end
   end

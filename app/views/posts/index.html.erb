@@ -1,10 +1,10 @@
 <h1>投稿一覧</h1>
-<%= link_to "投稿する", new_post_path, class:"post" %>
+<%= link_to "投稿する", new_post_path, class:"post-btn" %>
 
 <% @posts.each do |post| %>
   <div class="post">
     <div class="post-image">
-      <%= post.image %>
+      <%= image_tag post.image.variant(resize: '500x500'), class: 'post-image' if post.image.attached? %>
     </div>
     <div class="post-title">
       <%= post.title %>
@@ -16,7 +16,7 @@
       <%= post.date %>
     </div>
     <div class="post-club">
-      <%#= post.club.name %>
+      <%= post.club.name %>
     </div>
   </div>
 <% end %>

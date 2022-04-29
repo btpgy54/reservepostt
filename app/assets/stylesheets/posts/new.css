@@ -85,17 +85,6 @@
   margin-top: 2vh;
 }
 
-.posts-detail {
-  display: flex;
-  justify-content: space-between;
-  padding: 2vh 0;
-}
-
-.posts-detail>.form {
-  width: 300px;
-  padding: 2vh 0;
-}
-
 .select-box {
   margin: 2vh 0;
 }
@@ -119,10 +108,10 @@
 }
 
 .post-btn {
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: lightsalmon;
+  border: 1px solid lightsalmon;
   color: #fff;
-  width: 100%;
+  width: 80%;
   height: 50px;
   font-size: 14px;
   margin-bottom: 4vh;
@@ -136,11 +125,9 @@
   text-decoration: none;
 }
 
-/* /下部ボタン */
-
 .posts-doc-footer {
   background-color: #f5f5f5;
-  width: 60vw;
+  width: 100vw;
   padding: 3ch 0;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,35 @@
+<h1>投稿一覧</h1>
+<%= link_to "投稿する", new_post_path, class:"post" %>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-image">
+      <%= image_tag post.image.variant(resize: '500x500'), class: 'post-image' if post.image.attached? %>
+    </div>
+    <div class="post-title">
+      <%= post.title %>
+    </div>
+    <div class="description">
+      <%= post.description %>
+    </div>
+    <div class="date">
+      <%= post.date %>
+    </div>
+    <div class="post-club">
+      <%= post.club.name %>
+    </div>
+  </div>
+<% end %>
+
+
+<footer class="posts-doc-footer">
+    <ul class="menu">
+      <li><%= link_to "HOME", root_path %></li>
+      <li><a href="#">クラブ/講座</a></li>
+      <li><a href="#">予約</a></li>
+    </ul>
+    <%#= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+    <p class="inc">
+      ©︎〇〇町役場
+    </p>
+</footer>

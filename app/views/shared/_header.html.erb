@@ -11,9 +11,9 @@
   </div>
   <div class='nav'>
     <ul class='lists-left'>
-      <%= link_to '投稿', "#", class: "post-list" %>
-      <%= link_to 'クラブ/講座', "#", class: "club-list" %>
-      <%= link_to '予約', "#", class: "reserve-list" %>
+      <%= link_to '投稿一覧', posts_path, class: "post-list" %>
+      <%= link_to 'クラブ/講座一覧', "#", class: "club-list" %>
+      <%= link_to '予約一覧', "#", class: "reserve-list" %>
     </ul>
     <ul class='lists-right'>
       <% if user_signed_in? %>

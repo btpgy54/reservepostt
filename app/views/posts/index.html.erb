@@ -4,6 +4,7 @@
 <% @posts.each do |post| %>
   <div class="post">
     <div class="post-image">
+      <%= link_to post_path(post.id) do %>
       <%= image_tag post.image.variant(resize: '500x500'), class: 'post-image' if post.image.attached? %>
     </div>
     <div class="post-title">
@@ -19,6 +20,7 @@
       <%= post.club.name %>
     </div>
   </div>
+  <% end %>
 <% end %>
 
 

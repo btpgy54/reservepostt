@@ -8,8 +8,8 @@ reservepostt
 http://
 
 # テスト用アカウント
-・Basic認証パスワード:
-・Basic認証ID:
+・Basic認証パスワード: admin
+・Basic認証ID: 2222
 ・メールアドレス:
 ・パスワード:
 
@@ -27,6 +27,14 @@ http://
 
 
 # 実装した機能についての画像やGIFおよびその説明
+
+
+# 実装予定の機能
+資料や動画を投稿する機能
+予約管理機能
+
+# データベース設計
+
 
 
 * System dependencies

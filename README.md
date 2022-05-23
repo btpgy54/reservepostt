@@ -8,7 +8,7 @@ reservepostt
 http://
 
 # テスト用アカウント
-*Basic認証パスワード: admin -->
+<li>Basic認証パスワード: admin</li>
 ・Basic認証ID: 2222
 ・メールアドレス:
 ・パスワード:
